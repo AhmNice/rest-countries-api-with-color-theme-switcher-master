@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AhmNice/rest-countries-api-with-color-theme-switcher-master)
-- Live Site URL: [Add live site URL here](https://ahmnice.github.io/rest-countries-api-with-color-theme-switcher-master/)
+- Solution URL: [solution URL here](https://github.com/AhmNice/rest-countries-api-with-color-theme-switcher-master)
+- Live Site URL: [live site URL here](https://ahmnice.github.io/rest-countries-api-with-color-theme-switcher-master/)
 
 ## My process
 
