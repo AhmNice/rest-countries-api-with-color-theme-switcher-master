@@ -32,6 +32,9 @@ main{
     padding: 10px 20px;
     box-shadow:  0.5px 2px 1px 1px hsla(0, 0%, 49%, 0.192)  ;
 }
+.head h2{
+    font-size:13px;
+}
 .head button{
     background-color: white;
     display: flex;
