@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: nunito;
+    font-family: 16px;
+}
+@font-face {
+    font-family:nunito ;
+    src: url(Nunito_Sans/static/NunitoSans_10pt-Regular.ttf);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow:  0.5px 2px 1px 1px hsla(0, 0%, 49%, 0.192)  ;
+}
+.head button{
+    background-color: white;
+    display: flex;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.head button img{
+    width: 25px;;
+}
+.body{
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.neck{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    display: flex;
+    width: 350px;
+    height: max-content;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 1px 1px hsla(0, 0%, 49%, 0.192);
+}
+.search input{
+    padding: 5px ;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: hsl(0, 0%, 52%);
+}
+.filter{
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    gap: 10px;
+    box-shadow: 0.5px 0.5px 1px 1px hsla(0, 0%, 49%, 0.192);
+}
+.present{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.present img{
+    width: 25px;
+    height: 25px;
+}
+.list{
+    display: none;
+    flex-direction: column;
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    gap: 10px;
+    max-height: 0;
+    box-shadow: 1px 1px 12px 3px hsla(0, 0%, 49%, 0.192);
+    transition: max-height   ;
+    animation: ht 0.25s ;
+    overflow: hidden;
+}
+.list.active{
+    display: flex;
+    /* opacity: 1; */
+    max-height: 160px;
+}
+@keyframes ht {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 150px;
+    }
+}
+
+.list button{
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+.card{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px 2px hsla(0, 0%, 49%, 0.192);
+    background-color: white;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 40% 50%;
+}
+.cardHead{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.cardBody{
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.cardBody img, .cardHead img{
+    width: 100%;
+    height: 100%;
+    
+}
+.title{
+    font-weight: 800;
+}
+.population, 
+.region, 
+.capital{
+    font-weight:600;
+    color: hsl(200, 15%, 8%);
+}
+.Ptxt, .Ctxt, .Rtxt{
+    font-weight: 300;
+    color: hsl(200, 15%, 8%);
+}
+/* dark mode scheme */
+main.dark{
+    background-color: hsl(207, 26%, 17%);
+}
+main.dark .head{
+    background-color:  hsl(209, 23%, 22%);
+    color: white;
+}
+main.dark .head button{
+    background-color:  hsl(209, 23%, 22%);
+    color: white;
+}
+main.dark .filter{
+    color: white;
+}
+main.dark .list{
+    background-color:  hsl(209, 23%, 22%);
+    color: white;
+}
+main.dark .list button{
+    color: white;
+}
+main.dark .card{
+    background-color:  hsl(209, 23%, 22%);
+    color: white;
+    box-shadow: 0.5px 0.5px 1px -0.5px hsla(0, 0%, 49%, 0.192);
+}
+main.dark .cardBody p span{
+    color: white;
+    font-weight:300;
+}
+main.dark .search{
+    background-color:  hsl(209, 23%, 22%);
+}
+.Dcontainer{
+    padding: 30px 80px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 10px;
+    height: 75vh;
+    
+}
+.flags{
+    height: 80%;
+    width: 80%;
+    box-shadow: 0.5px 0.5px 2px 2px hsla(0, 0%, 49%, 0.192);
+}
+.flags img{
+    width: 100%;
+    height: 100%;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    height: 80%;
+}
+.detail{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    width: 100%;
+}
+.detail div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.detail p{
+    width: 100%;
+}
+.titleText{
+    font-weight: 700;
+    font-size: 25px;
+    color: hsl(200, 15%, 8%);
+}
+main.dark .titleText{
+    color: white;
+}
+.backBtn, .border{
+    padding: 5px 5px;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0.5px hsla(0, 0%, 49%, 0.192);
+    display: flex;
+    gap: 10px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+main.dark .backBtn, main.dark .border{
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: 0px 0px 6px 0.5px hsla(209, 23%, 22%, 0.192);
+    color: white;
+}
+main.dark .detail{
+    color: white;
+}
+main.dark .borderC{
+    color: white;
+}
+.borderC{
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+    align-items: center;
+}
+.borderC p{
+    width: 50%;
+}
+@media only screen and (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+}
