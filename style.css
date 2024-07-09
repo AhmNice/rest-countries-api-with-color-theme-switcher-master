@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family:nunito ;
-    src: url(Nunito_Sans/static/NunitoSans_10pt-Regular.ttf);
+    src: url(Nunito_Sans/static/NunitoSans_7pt-Regular.ttf);
 }
 .container{
     display: grid;
@@ -136,12 +136,13 @@ main{
     background-color: white;
     height: 300px;
     display: grid;
-    grid-template-rows: 40% 50%;
+    grid-template-rows: 50% 50%;
 }
 .cardHead{
     width: 100%;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
+    height: 100%;
 }
 .cardBody{
     width: 100%;
@@ -288,5 +289,14 @@ main.dark .borderC{
         justify-content: center;
         align-items: center;
         padding: 0px;
+    }
+    .card{
+        width:300px ;
+    }
+    .neck{
+        display: flex;
+        gap: 30px;
+        justify-content: fl;
+        flex-direction: column;
     }
 }
