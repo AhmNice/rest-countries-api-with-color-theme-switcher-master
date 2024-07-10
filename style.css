@@ -31,10 +31,9 @@ main{
     background-color: white;
     padding: 10px 20px;
     box-shadow:  0.5px 2px 1px 1px hsla(0, 0%, 49%, 0.192)  ;
-    align-items:center;
 }
 .head h2{
-    font-size:13px;
+    font-size: 15px;
 }
 .head button{
     background-color: white;
@@ -274,14 +273,20 @@ main.dark .backBtn, main.dark .border{
 main.dark .detail{
     color: white;
 }
-main.dark .borderC{
+main.dark .borderD{
     color: white;
 }
 .borderC{
     display: flex;
     gap: 10px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     align-items: center;
+    gap: 10px;
+}
+.borderD{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .borderC p{
     width: 50%;
@@ -300,7 +305,29 @@ main.dark .borderC{
     .neck{
         display: flex;
         gap: 30px;
-        justify-content: fl;
+        justify-content: normal;
         flex-direction: column;
+    }
+    .Dcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px;
+        height: max-content;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .borderD{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .borderC{
+        align-items: center;
+        justify-content: normal;
     }
 }
